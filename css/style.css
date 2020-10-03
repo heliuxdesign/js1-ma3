@@ -1,0 +1,51 @@
+h1 {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.container {
+	max-width: 50rem;
+	background-color: rgb(196, 228, 233);
+	margin: 0 auto;
+}
+
+.results {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.result {
+	margin: 1rem;
+	padding: 2rem;
+	max-width: 10rem;
+	background: rgb(231, 200, 200);
+	border: 2px solid rgb(79, 99, 102);
+	border-radius: 2rem 1rem;
+}
+
+.loader {
+	border: 16px dotted #f3f3f3;
+	border-top: 16px dotted palevioletred;
+	border-right: 16px dotted rgb(231, 71, 125);
+	border-left: 16px dotted rgb(218, 167, 184);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.error {
+	font-size: 20px;
+	color: red;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
